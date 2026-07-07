@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Ilustração do projeto MedBooking">
+  
+  <defs>
+    <pattern id="gridS" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#5b8bc9" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+    <pattern id="gridL" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#5b8bc9" stroke-opacity="0.12" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="copperGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0b27e"/>
+      <stop offset="1" stop-color="#e2985a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="#0a101b"/>
+  <rect width="1200" height="675" fill="url(#gridS)"/>
+  <rect width="1200" height="675" fill="url(#gridL)"/>
+  <g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="27" y1="36" x2="45" y2="36"/>
+    <line x1="36" y1="27" x2="36" y2="45"/>
+  </g><g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="1155" y1="36" x2="1173" y2="36"/>
+    <line x1="1164" y1="27" x2="1164" y2="45"/>
+  </g><g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="27" y1="639" x2="45" y2="639"/>
+    <line x1="36" y1="630" x2="36" y2="648"/>
+  </g><g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="1155" y1="639" x2="1173" y2="639"/>
+    <line x1="1164" y1="630" x2="1164" y2="648"/>
+  </g>
+  
+  
+  <g>
+    <rect x="360" y="120" width="620" height="430" rx="14" fill="#0f1826" stroke="#2e4266"/>
+    <line x1="360" y1="164" x2="980" y2="164" stroke="#1d2b44"/>
+    <circle cx="386" cy="142" r="6" fill="#e2985a" opacity="0.9"/>
+    <circle cx="408" cy="142" r="6" fill="#5b8bc9" opacity="0.7"/>
+    <circle cx="430" cy="142" r="6" fill="#5c7396" opacity="0.6"/>
+    <text x="958" y="148" text-anchor="end" font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace" font-size="14" fill="#5c7396" letter-spacing="2">medbooking.app/agenda</text>
+  </g>
+  <g font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace" font-size="14" fill="#8ca2c0">
+    <text x="449" y="178" text-anchor="middle" letter-spacing="1">SEG</text><text x="521" y="178" text-anchor="middle" letter-spacing="1">TER</text><text x="593" y="178" text-anchor="middle" letter-spacing="1">QUA</text><text x="665" y="178" text-anchor="middle" letter-spacing="1">QUI</text><text x="737" y="178" text-anchor="middle" letter-spacing="1">SEX</text><text x="809" y="178" text-anchor="middle" letter-spacing="1">SAB</text><text x="881" y="178" text-anchor="middle" letter-spacing="1">DOM</text>
+  </g>
+  <rect x="420" y="190" width="58" height="48" rx="8" fill="#0f1826" fill-opacity="1" stroke="#1d2b44"/><rect x="492" y="190" width="58" height="48" rx="8" fill="#0f1826" fill-opacity="1" stroke="#1d2b44"/><rect x="564" y="190" width="58" height="48" rx="8" fill="#0f1826" fill-opacity="1" stroke="#1d2b44"/><rect x="636" y="190" width="58" height="48" rx="8" fill="#0f1826" fill-opacity="1" stroke="#1d2b44"/><rect x="708" y="190" width="58" height="48" rx="8" fill="#0f1826" fill-opacity="1" stroke="#1d2b44"/><rect x="780" y="190" width="58" height="48" rx="8" fill="#0f1826" fill-opacity="1" stroke="#1d2b44"/><rect x="852" y="190" width="58" height="48" rx="8" fill="#0f1826" fill-opacity="1" stroke="#1d2b44"/><rect x="420" y="252" width="58" height="48" rx="8" fill="#0f1826" fill-opacity="1" stroke="#1d2b44"/><rect x="492" y="252" width="58" height="48" rx="8" fill="#0f1826" fill-opacity="1" stroke="#1d2b44"/><rect x="564" y="252" width="58" height="48" rx="8" fill="#e2985a" fill-opacity="0.9" stroke="#f0b27e"/><circle cx="593" cy="276" r="5" fill="#0a101b"/><rect x="636" y="252" width="58" height="48" rx="8" fill="#0f1826" fill-opacity="1" stroke="#1d2b44"/><rect x="708" y="252" width="58" height="48" rx="8" fill="#0f1826" fill-opacity="1" stroke="#1d2b44"/><rect x="780" y="252" width="58" height="48" rx="8" fill="#e2985a" fill-opacity="0.9" stroke="#f0b27e"/><circle cx="809" cy="276" r="5" fill="#0a101b"/><rect x="852" y="252" width="58" height="48" rx="8" fill="#0f1826" fill-opacity="1" stroke="#1d2b44"/><rect x="420" y="314" width="58" height="48" rx="8" fill="#0f1826" fill-opacity="1" stroke="#1d2b44"/><rect x="492" y="314" width="58" height="48" rx="8" fill="#0f1826" fill-opacity="1" stroke="#1d2b44"/><rect x="564" y="314" width="58" height="48" rx="8" fill="#0f1826" fill-opacity="1" stroke="#1d2b44"/><rect x="636" y="314" width="58" height="48" rx="8" fill="#e2985a" fill-opacity="0.9" stroke="#f0b27e"/><circle cx="665" cy="338" r="5" fill="#0a101b"/><rect x="708" y="314" width="58" height="48" rx="8" fill="#0f1826" fill-opacity="1" stroke="#1d2b44"/><rect x="780" y="314" width="58" height="48" rx="8" fill="#0f1826" fill-opacity="1" stroke="#1d2b44"/><rect x="852" y="314" width="58" height="48" rx="8" fill="#0f1826" fill-opacity="1" stroke="#1d2b44"/><rect x="420" y="376" width="58" height="48" rx="8" fill="#0f1826" fill-opacity="1" stroke="#1d2b44"/><rect x="492" y="376" width="58" height="48" rx="8" fill="#0f1826" fill-opacity="1" stroke="#1d2b44"/><rect x="564" y="376" width="58" height="48" rx="8" fill="#0f1826" fill-opacity="1" stroke="#1d2b44"/><rect x="636" y="376" width="58" height="48" rx="8" fill="#e2985a" fill-opacity="0.9" stroke="#f0b27e"/><circle cx="665" cy="400" r="5" fill="#0a101b"/><rect x="708" y="376" width="58" height="48" rx="8" fill="#0f1826" fill-opacity="1" stroke="#1d2b44"/><rect x="780" y="376" width="58" height="48" rx="8" fill="#0f1826" fill-opacity="1" stroke="#1d2b44"/><rect x="852" y="376" width="58" height="48" rx="8" fill="#0f1826" fill-opacity="1" stroke="#1d2b44"/>
+  <g transform="translate(222,300)">
+    <circle r="86" fill="#0f1826" stroke="#2e4266" stroke-width="2"/>
+    <circle r="86" fill="none" stroke="#e2985a" stroke-width="4" stroke-dasharray="270 271" stroke-linecap="round" transform="rotate(-90)"/>
+    <line x1="0" y1="0" x2="0" y2="-46" stroke="#e8eef7" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="30" y2="18" stroke="#f0b27e" stroke-width="4" stroke-linecap="round"/>
+    <circle r="6" fill="#f0b27e"/>
+  </g>
+  <g font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace">
+    <text x="64" y="601" font-size="30" font-weight="600" fill="#e8eef7" letter-spacing="2">MedBooking</text>
+    <text x="64" y="631" font-size="15" fill="#5c7396" letter-spacing="3">FIG.04 · SOLUÇÃO CORPORATIVA</text>
+  </g>
+  <g font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace" font-size="14" fill="#e2985a" opacity="0.85">
+    <text x="1136" y="631" text-anchor="end" letter-spacing="3">BOB.DEV</text>
+  </g>
+</svg>

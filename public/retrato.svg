@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="960" viewBox="0 0 800 960" role="img" aria-label="Retrato ilustrado do desenvolvedor em estilo de desenho técnico">
+  
+  <defs>
+    <pattern id="gridS" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#5b8bc9" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+    <pattern id="gridL" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#5b8bc9" stroke-opacity="0.12" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="copperGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0b27e"/>
+      <stop offset="1" stop-color="#e2985a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="960" fill="#0a101b"/>
+  <rect width="800" height="960" fill="url(#gridS)"/>
+  <rect width="800" height="960" fill="url(#gridL)"/>
+  <g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="31" y1="40" x2="49" y2="40"/>
+    <line x1="40" y1="31" x2="40" y2="49"/>
+  </g><g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="751" y1="40" x2="769" y2="40"/>
+    <line x1="760" y1="31" x2="760" y2="49"/>
+  </g><g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="31" y1="920" x2="49" y2="920"/>
+    <line x1="40" y1="911" x2="40" y2="929"/>
+  </g><g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="751" y1="920" x2="769" y2="920"/>
+    <line x1="760" y1="911" x2="760" y2="929"/>
+  </g>
+
+  <circle cx="400" cy="420" r="250" fill="#5b8bc9" opacity="0.07"/>
+  <circle cx="400" cy="420" r="250" fill="none" stroke="#5b8bc9" stroke-opacity="0.35" stroke-dasharray="4 10"/>
+
+  <!-- Busto estilizado -->
+  <g stroke-linecap="round">
+    <path d="M 400 200 C 330 200 296 258 296 330 C 296 402 340 462 400 462 C 460 462 504 402 504 330 C 504 258 470 200 400 200 Z"
+      fill="#0f1826" stroke="#2e4266" stroke-width="3"/>
+    <path d="M 296 320 C 288 236 336 178 400 178 C 464 178 512 236 504 320 C 492 268 470 244 400 244 C 330 244 308 268 296 320 Z"
+      fill="#1d2b44" stroke="#2e4266" stroke-width="2"/>
+    <!-- Óculos cobre -->
+    <g fill="none" stroke="#e2985a" stroke-width="5">
+      <rect x="312" y="316" width="76" height="58" rx="16"/>
+      <rect x="412" y="316" width="76" height="58" rx="16"/>
+      <line x1="388" y1="340" x2="412" y2="340"/>
+      <line x1="312" y1="336" x2="296" y2="330"/>
+      <line x1="488" y1="336" x2="504" y2="330"/>
+    </g>
+    <path d="M 366 416 Q 400 436 434 416" fill="none" stroke="#8ca2c0" stroke-width="4"/>
+    <!-- Ombros / moletom -->
+    <path d="M 220 700 C 220 560 300 496 400 496 C 500 496 580 560 580 700 L 580 760 L 220 760 Z"
+      fill="#0f1826" stroke="#2e4266" stroke-width="3"/>
+    <path d="M 352 496 L 400 560 L 448 496" fill="none" stroke="#1d2b44" stroke-width="3"/>
+    <line x1="400" y1="560" x2="400" y2="700" stroke="#1d2b44" stroke-width="3" stroke-dasharray="2 10"/>
+    <!-- Fones -->
+    <path d="M 286 320 C 268 210 330 140 400 140 C 470 140 532 210 514 320"
+      fill="none" stroke="#f0b27e" stroke-width="9"/>
+    <rect x="266" y="304" width="34" height="72" rx="14" fill="#e2985a"/>
+    <rect x="500" y="304" width="34" height="72" rx="14" fill="#e2985a"/>
+  </g>
+
+  <!-- Laptop -->
+  <g transform="translate(400,806)">
+    <rect x="-190" y="-64" width="380" height="24" rx="8" fill="#1d2b44" stroke="#2e4266"/>
+    <rect x="-160" y="-176" width="320" height="112" rx="10" fill="#0f1826" stroke="#2e4266" stroke-width="2"/>
+    <g font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace" font-size="15" fill="#9cc3f0">
+      <text x="-140" y="-146">const stack = [</text>
+      <text x="-118" y="-122" fill="#f0b27e">"ts", "next", "nest"</text>
+      <text x="-140" y="-98" fill="#9cc3f0">];</text>
+    </g>
+  </g>
+
+  <!-- Cotas de desenho técnico -->
+  <g font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace" font-size="15" fill="#5c7396" letter-spacing="2">
+    <line x1="620" y1="200" x2="620" y2="460" stroke="#5c7396" stroke-width="1.5"/>
+    <line x1="608" y1="200" x2="632" y2="200" stroke="#5c7396" stroke-width="1.5"/>
+    <line x1="608" y1="460" x2="632" y2="460" stroke="#5c7396" stroke-width="1.5"/>
+    <text x="640" y="336" writing-mode="tb" letter-spacing="4">FULL STACK</text>
+    <text x="72" y="880" letter-spacing="3">FIG.02 — O ARQUITETO</text>
+    <text x="72" y="908" letter-spacing="3" fill="#e2985a">DESDE A INFÂNCIA ATÉ A NUVEM</text>
+  </g>
+</svg>

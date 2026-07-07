@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Ilustração do projeto Dofus_Receitas">
+  
+  <defs>
+    <pattern id="gridS" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#5b8bc9" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+    <pattern id="gridL" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#5b8bc9" stroke-opacity="0.12" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="copperGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0b27e"/>
+      <stop offset="1" stop-color="#e2985a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="#0a101b"/>
+  <rect width="1200" height="675" fill="url(#gridS)"/>
+  <rect width="1200" height="675" fill="url(#gridL)"/>
+  <g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="27" y1="36" x2="45" y2="36"/>
+    <line x1="36" y1="27" x2="36" y2="45"/>
+  </g><g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="1155" y1="36" x2="1173" y2="36"/>
+    <line x1="1164" y1="27" x2="1164" y2="45"/>
+  </g><g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="27" y1="639" x2="45" y2="639"/>
+    <line x1="36" y1="630" x2="36" y2="648"/>
+  </g><g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="1155" y1="639" x2="1173" y2="639"/>
+    <line x1="1164" y1="630" x2="1164" y2="648"/>
+  </g>
+  
+  <g stroke="#2e4266" stroke-width="2" stroke-dasharray="6 6" fill="none">
+    <path d="M 600 240 L 400 360"/>
+    <path d="M 600 240 L 600 360"/>
+    <path d="M 600 240 L 800 360"/>
+    <path d="M 400 400 L 320 500"/>
+    <path d="M 400 400 L 480 500"/>
+    <path d="M 800 400 L 720 500"/>
+    <path d="M 800 400 L 880 500"/>
+  </g>
+  <g transform="translate(600,210)">
+    <rect x="-84" y="-34" width="168" height="68" rx="12" fill="#0f1826" stroke="#e2985a" stroke-width="2.5"/>
+    <text x="0" y="-2" text-anchor="middle" font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace" font-size="16" fill="#f0b27e" letter-spacing="1">RECEITA</text>
+    <text x="0" y="20" text-anchor="middle" font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace" font-size="13" fill="#5c7396">cache O(1)</text>
+  </g>
+  
+    <g transform="translate(400,384)">
+      <rect x="-52" y="-24" width="104" height="48" rx="10" fill="#0f1826" stroke="#5b8bc9" stroke-opacity="0.8"/>
+      <circle cx="-30" cy="0" r="9" fill="#5b8bc9" opacity="0.7"/>
+      <rect x="-12" y="-5" width="52" height="10" rx="5" fill="#8ca2c0" opacity="0.5"/>
+    </g>
+    <g transform="translate(600,384)">
+      <rect x="-52" y="-24" width="104" height="48" rx="10" fill="#0f1826" stroke="#9cc3f0" stroke-opacity="0.8"/>
+      <circle cx="-30" cy="0" r="9" fill="#9cc3f0" opacity="0.7"/>
+      <rect x="-12" y="-5" width="52" height="10" rx="5" fill="#8ca2c0" opacity="0.5"/>
+    </g>
+    <g transform="translate(800,384)">
+      <rect x="-52" y="-24" width="104" height="48" rx="10" fill="#0f1826" stroke="#5b8bc9" stroke-opacity="0.8"/>
+      <circle cx="-30" cy="0" r="9" fill="#5b8bc9" opacity="0.7"/>
+      <rect x="-12" y="-5" width="52" height="10" rx="5" fill="#8ca2c0" opacity="0.5"/>
+    </g>
+  
+    <g transform="translate(320,524)">
+      <rect x="-52" y="-24" width="104" height="48" rx="10" fill="#0f1826" stroke="#5c7396" stroke-opacity="0.8"/>
+      <circle cx="-30" cy="0" r="9" fill="#5c7396" opacity="0.7"/>
+      <rect x="-12" y="-5" width="52" height="10" rx="5" fill="#8ca2c0" opacity="0.5"/>
+    </g>
+    <g transform="translate(480,524)">
+      <rect x="-52" y="-24" width="104" height="48" rx="10" fill="#0f1826" stroke="#5c7396" stroke-opacity="0.8"/>
+      <circle cx="-30" cy="0" r="9" fill="#5c7396" opacity="0.7"/>
+      <rect x="-12" y="-5" width="52" height="10" rx="5" fill="#8ca2c0" opacity="0.5"/>
+    </g>
+    <g transform="translate(720,524)">
+      <rect x="-52" y="-24" width="104" height="48" rx="10" fill="#0f1826" stroke="#5c7396" stroke-opacity="0.8"/>
+      <circle cx="-30" cy="0" r="9" fill="#5c7396" opacity="0.7"/>
+      <rect x="-12" y="-5" width="52" height="10" rx="5" fill="#8ca2c0" opacity="0.5"/>
+    </g>
+    <g transform="translate(880,524)">
+      <rect x="-52" y="-24" width="104" height="48" rx="10" fill="#0f1826" stroke="#5c7396" stroke-opacity="0.8"/>
+      <circle cx="-30" cy="0" r="9" fill="#5c7396" opacity="0.7"/>
+      <rect x="-12" y="-5" width="52" height="10" rx="5" fill="#8ca2c0" opacity="0.5"/>
+    </g>
+  <g font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace">
+    <text x="64" y="601" font-size="30" font-weight="600" fill="#e8eef7" letter-spacing="2">Dofus_Receitas</text>
+    <text x="64" y="631" font-size="15" fill="#5c7396" letter-spacing="3">FIG.10 · R&D TÉCNICO</text>
+  </g>
+  <g font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace" font-size="14" fill="#e2985a" opacity="0.85">
+    <text x="1136" y="631" text-anchor="end" letter-spacing="3">BOB.DEV</text>
+  </g>
+</svg>

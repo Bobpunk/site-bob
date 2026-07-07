@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Ilustração do projeto LogiTrack">
+  
+  <defs>
+    <pattern id="gridS" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#5b8bc9" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+    <pattern id="gridL" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#5b8bc9" stroke-opacity="0.12" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="copperGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0b27e"/>
+      <stop offset="1" stop-color="#e2985a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="#0a101b"/>
+  <rect width="1200" height="675" fill="url(#gridS)"/>
+  <rect width="1200" height="675" fill="url(#gridL)"/>
+  <g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="27" y1="36" x2="45" y2="36"/>
+    <line x1="36" y1="27" x2="36" y2="45"/>
+  </g><g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="1155" y1="36" x2="1173" y2="36"/>
+    <line x1="1164" y1="27" x2="1164" y2="45"/>
+  </g><g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="27" y1="639" x2="45" y2="639"/>
+    <line x1="36" y1="630" x2="36" y2="648"/>
+  </g><g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="1155" y1="639" x2="1173" y2="639"/>
+    <line x1="1164" y1="630" x2="1164" y2="648"/>
+  </g>
+  
+  
+  <g>
+    <rect x="280" y="100" width="640" height="470" rx="14" fill="#0f1826" stroke="#2e4266"/>
+    <line x1="280" y1="144" x2="920" y2="144" stroke="#1d2b44"/>
+    <circle cx="306" cy="122" r="6" fill="#e2985a" opacity="0.9"/>
+    <circle cx="328" cy="122" r="6" fill="#5b8bc9" opacity="0.7"/>
+    <circle cx="350" cy="122" r="6" fill="#5c7396" opacity="0.6"/>
+    <text x="898" y="128" text-anchor="end" font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace" font-size="14" fill="#5c7396" letter-spacing="2">logitrack.io/rotas</text>
+  </g>
+  <g stroke="#1d2b44" stroke-width="1.5" opacity="0.8">
+    <line x1="300" y1="190" x2="900" y2="190"/><line x1="300" y1="260" x2="900" y2="260"/><line x1="300" y1="330" x2="900" y2="330"/><line x1="300" y1="400" x2="900" y2="400"/><line x1="300" y1="470" x2="900" y2="470"/>
+    <line x1="380" y1="164" x2="380" y2="550"/><line x1="470" y1="164" x2="470" y2="550"/><line x1="560" y1="164" x2="560" y2="550"/><line x1="650" y1="164" x2="650" y2="550"/><line x1="740" y1="164" x2="740" y2="550"/><line x1="830" y1="164" x2="830" y2="550"/>
+  </g>
+  <polyline points="340,500 470,500 470,400 560,400 560,300 700,300 700,230 830,230"
+    fill="none" stroke="#e2985a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="14 10"/>
+  <circle cx="340" cy="500" r="12" fill="#5b8bc9" stroke="#0a101b" stroke-width="3"/>
+  <g transform="translate(830,230)">
+    <circle r="26" fill="#e2985a" opacity="0.22"/>
+    <path d="M 0 -20 C 12 -20 20 -11 20 0 C 20 13 0 30 0 30 C 0 30 -20 13 -20 0 C -20 -11 -12 -20 0 -20 Z" fill="#f0b27e"/>
+    <circle cy="-1" r="7" fill="#0a101b"/>
+  </g>
+  <g transform="translate(950,150)">
+    <rect width="200" height="150" rx="12" fill="#0f1826" stroke="#2e4266"/>
+    <text x="20" y="36" font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace" font-size="14" fill="#8ca2c0" letter-spacing="2">LATÊNCIA</text>
+    <text x="20" y="76" font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace" font-size="34" font-weight="600" fill="#f0b27e">84ms</text>
+    <text x="20" y="112" font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace" font-size="14" fill="#5c7396">p99 · streams</text>
+  </g>
+  <g font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace">
+    <text x="64" y="601" font-size="30" font-weight="600" fill="#e8eef7" letter-spacing="2">LogiTrack</text>
+    <text x="64" y="631" font-size="15" fill="#5c7396" letter-spacing="3">FIG.09 · R&D TÉCNICO</text>
+  </g>
+  <g font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace" font-size="14" fill="#e2985a" opacity="0.85">
+    <text x="1136" y="631" text-anchor="end" letter-spacing="3">BOB.DEV</text>
+  </g>
+</svg>

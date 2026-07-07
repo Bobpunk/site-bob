@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Ilustração do projeto MetaDriver">
+  
+  <defs>
+    <pattern id="gridS" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#5b8bc9" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+    <pattern id="gridL" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#5b8bc9" stroke-opacity="0.12" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="copperGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0b27e"/>
+      <stop offset="1" stop-color="#e2985a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="#0a101b"/>
+  <rect width="1200" height="675" fill="url(#gridS)"/>
+  <rect width="1200" height="675" fill="url(#gridL)"/>
+  <g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="27" y1="36" x2="45" y2="36"/>
+    <line x1="36" y1="27" x2="36" y2="45"/>
+  </g><g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="1155" y1="36" x2="1173" y2="36"/>
+    <line x1="1164" y1="27" x2="1164" y2="45"/>
+  </g><g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="27" y1="639" x2="45" y2="639"/>
+    <line x1="36" y1="630" x2="36" y2="648"/>
+  </g><g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="1155" y1="639" x2="1173" y2="639"/>
+    <line x1="1164" y1="630" x2="1164" y2="648"/>
+  </g>
+  <line x1="380" y1="200" x2="600" y2="330" stroke="#2e4266" stroke-width="2" stroke-dasharray="7 7"/><line x1="380" y1="460" x2="600" y2="330" stroke="#2e4266" stroke-width="2" stroke-dasharray="7 7"/><line x1="600" y1="330" x2="820" y2="200" stroke="#2e4266" stroke-width="2" stroke-dasharray="7 7"/><line x1="600" y1="330" x2="820" y2="460" stroke="#2e4266" stroke-width="2" stroke-dasharray="7 7"/><line x1="600" y1="140" x2="600" y2="330" stroke="#2e4266" stroke-width="2" stroke-dasharray="7 7"/><line x1="600" y1="330" x2="600" y2="520" stroke="#2e4266" stroke-width="2" stroke-dasharray="7 7"/>
+    <g transform="translate(600,330)">
+      <rect x="-74" y="-30" width="148" height="60" rx="12" fill="#0f1826" stroke="#e2985a" stroke-width="3"/>
+      <text x="0" y="6" text-anchor="middle" font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace" font-size="17" fill="#f0b27e" letter-spacing="2">CORE</text>
+    </g>
+    <g transform="translate(380,200)">
+      <rect x="-74" y="-30" width="148" height="60" rx="12" fill="#0f1826" stroke="#5b8bc9" stroke-width="1.5"/>
+      <text x="0" y="6" text-anchor="middle" font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace" font-size="17" fill="#e8eef7" letter-spacing="2">SCHEMA_A</text>
+    </g>
+    <g transform="translate(380,460)">
+      <rect x="-74" y="-30" width="148" height="60" rx="12" fill="#0f1826" stroke="#5b8bc9" stroke-width="1.5"/>
+      <text x="0" y="6" text-anchor="middle" font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace" font-size="17" fill="#e8eef7" letter-spacing="2">SCHEMA_B</text>
+    </g>
+    <g transform="translate(820,200)">
+      <rect x="-74" y="-30" width="148" height="60" rx="12" fill="#0f1826" stroke="#f0b27e" stroke-width="1.5"/>
+      <text x="0" y="6" text-anchor="middle" font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace" font-size="17" fill="#e8eef7" letter-spacing="2">REDIS</text>
+    </g>
+    <g transform="translate(820,460)">
+      <rect x="-74" y="-30" width="148" height="60" rx="12" fill="#0f1826" stroke="#9cc3f0" stroke-width="1.5"/>
+      <text x="0" y="6" text-anchor="middle" font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace" font-size="17" fill="#e8eef7" letter-spacing="2">WS_SYNC</text>
+    </g>
+    <g transform="translate(600,140)">
+      <rect x="-74" y="-30" width="148" height="60" rx="12" fill="#0f1826" stroke="#8ca2c0" stroke-width="1.5"/>
+      <text x="0" y="6" text-anchor="middle" font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace" font-size="17" fill="#e8eef7" letter-spacing="2">REGISTRY</text>
+    </g>
+    <g transform="translate(600,520)">
+      <rect x="-74" y="-30" width="148" height="60" rx="12" fill="#0f1826" stroke="#5b8bc9" stroke-width="1.5"/>
+      <text x="0" y="6" text-anchor="middle" font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace" font-size="17" fill="#e8eef7" letter-spacing="2">PG</text>
+    </g>
+  <g font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace">
+    <text x="64" y="601" font-size="30" font-weight="600" fill="#e8eef7" letter-spacing="2">MetaDriver</text>
+    <text x="64" y="631" font-size="15" fill="#5c7396" letter-spacing="3">FIG.07 · R&D TÉCNICO</text>
+  </g>
+  <g font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace" font-size="14" fill="#e2985a" opacity="0.85">
+    <text x="1136" y="631" text-anchor="end" letter-spacing="3">BOB.DEV</text>
+  </g>
+</svg>

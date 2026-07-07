@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Ilustração do projeto Landing_Laiza">
+  
+  <defs>
+    <pattern id="gridS" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#5b8bc9" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+    <pattern id="gridL" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#5b8bc9" stroke-opacity="0.12" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="copperGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0b27e"/>
+      <stop offset="1" stop-color="#e2985a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="#0a101b"/>
+  <rect width="1200" height="675" fill="url(#gridS)"/>
+  <rect width="1200" height="675" fill="url(#gridL)"/>
+  <g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="27" y1="36" x2="45" y2="36"/>
+    <line x1="36" y1="27" x2="36" y2="45"/>
+  </g><g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="1155" y1="36" x2="1173" y2="36"/>
+    <line x1="1164" y1="27" x2="1164" y2="45"/>
+  </g><g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="27" y1="639" x2="45" y2="639"/>
+    <line x1="36" y1="630" x2="36" y2="648"/>
+  </g><g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="1155" y1="639" x2="1173" y2="639"/>
+    <line x1="1164" y1="630" x2="1164" y2="648"/>
+  </g>
+  
+  
+  <g>
+    <rect x="300" y="100" width="600" height="470" rx="14" fill="#0f1826" stroke="#2e4266"/>
+    <line x1="300" y1="144" x2="900" y2="144" stroke="#1d2b44"/>
+    <circle cx="326" cy="122" r="6" fill="#e2985a" opacity="0.9"/>
+    <circle cx="348" cy="122" r="6" fill="#5b8bc9" opacity="0.7"/>
+    <circle cx="370" cy="122" r="6" fill="#5c7396" opacity="0.6"/>
+    <text x="878" y="128" text-anchor="end" font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace" font-size="14" fill="#5c7396" letter-spacing="2">laiza.com.br</text>
+  </g>
+  <rect x="340" y="180" width="290" height="26" rx="6" fill="#e8eef7" opacity="0.92"/>
+  <rect x="340" y="218" width="220" height="26" rx="6" fill="#e8eef7" opacity="0.55"/>
+  <rect x="340" y="272" width="360" height="12" rx="6" fill="#8ca2c0" opacity="0.4"/>
+  <rect x="340" y="294" width="310" height="12" rx="6" fill="#8ca2c0" opacity="0.3"/>
+  <rect x="340" y="342" width="170" height="44" rx="10" fill="url(#copperGrad)"/>
+  <rect x="524" y="342" width="150" height="44" rx="10" fill="none" stroke="#2e4266"/>
+  <g>
+    <rect x="340" y="430" width="160" height="104" rx="10" fill="#0f1826" stroke="#1d2b44"/>
+    <rect x="516" y="430" width="160" height="104" rx="10" fill="#0f1826" stroke="#1d2b44"/>
+    <rect x="692" y="430" width="160" height="104" rx="10" fill="#0f1826" stroke="#1d2b44"/>
+    <circle cx="372" cy="462" r="12" fill="#5b8bc9" opacity="0.8"/>
+    <circle cx="548" cy="462" r="12" fill="#e2985a" opacity="0.8"/>
+    <circle cx="724" cy="462" r="12" fill="#9cc3f0" opacity="0.8"/>
+  </g>
+  <g transform="translate(760,150)">
+    <rect x="0" y="0" width="180" height="220" rx="12" fill="#0f1826" stroke="#e2985a" stroke-opacity="0.6"/>
+    <circle cx="90" cy="82" r="42" fill="#e2985a" opacity="0.25" stroke="#e2985a"/>
+    <circle cx="90" cy="70" r="20" fill="#e2985a" opacity="0.7"/>
+    <path d="M 52 122 Q 90 96 128 122 L 128 140 L 52 140 Z" fill="#e2985a" opacity="0.7"/>
+    <rect x="36" y="160" width="108" height="10" rx="5" fill="#8ca2c0" opacity="0.5"/>
+    <rect x="52" y="182" width="76" height="10" rx="5" fill="#8ca2c0" opacity="0.3"/>
+  </g>
+  <g font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace">
+    <text x="64" y="601" font-size="30" font-weight="600" fill="#e8eef7" letter-spacing="2">Landing_Laiza</text>
+    <text x="64" y="631" font-size="15" fill="#5c7396" letter-spacing="3">FIG.05 · SOLUÇÃO CORPORATIVA</text>
+  </g>
+  <g font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace" font-size="14" fill="#e2985a" opacity="0.85">
+    <text x="1136" y="631" text-anchor="end" letter-spacing="3">BOB.DEV</text>
+  </g>
+</svg>

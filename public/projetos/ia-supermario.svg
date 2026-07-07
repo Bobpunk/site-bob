@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Ilustração do projeto IA_SuperMario">
+  
+  <defs>
+    <pattern id="gridS" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#5b8bc9" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+    <pattern id="gridL" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#5b8bc9" stroke-opacity="0.12" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="copperGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0b27e"/>
+      <stop offset="1" stop-color="#e2985a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="#0a101b"/>
+  <rect width="1200" height="675" fill="url(#gridS)"/>
+  <rect width="1200" height="675" fill="url(#gridL)"/>
+  <g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="27" y1="36" x2="45" y2="36"/>
+    <line x1="36" y1="27" x2="36" y2="45"/>
+  </g><g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="1155" y1="36" x2="1173" y2="36"/>
+    <line x1="1164" y1="27" x2="1164" y2="45"/>
+  </g><g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="27" y1="639" x2="45" y2="639"/>
+    <line x1="36" y1="630" x2="36" y2="648"/>
+  </g><g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="1155" y1="639" x2="1173" y2="639"/>
+    <line x1="1164" y1="630" x2="1164" y2="648"/>
+  </g>
+  
+  <text x="330" y="170" font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace" font-size="15" fill="#5c7396" letter-spacing="3">AGENTE · GERAÇÃO 42</text>
+  <rect x="398" y="200" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.91"/><rect x="432" y="200" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.55"/><rect x="466" y="200" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.73"/><rect x="500" y="200" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.91"/><rect x="364" y="234" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.91"/><rect x="398" y="234" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.55"/><rect x="432" y="234" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.73"/><rect x="466" y="234" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.91"/><rect x="500" y="234" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.55"/><rect x="534" y="234" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.73"/><rect x="364" y="268" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.55"/><rect x="398" y="268" width="30" height="30" rx="4" fill="#0a101b" /><rect x="432" y="268" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.91"/><rect x="466" y="268" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.55"/><rect x="500" y="268" width="30" height="30" rx="4" fill="#0a101b" /><rect x="534" y="268" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.91"/><rect x="364" y="302" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.73"/><rect x="398" y="302" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.91"/><rect x="432" y="302" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.55"/><rect x="466" y="302" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.73"/><rect x="500" y="302" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.91"/><rect x="534" y="302" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.55"/><rect x="398" y="336" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.55"/><rect x="432" y="336" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.73"/><rect x="466" y="336" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.91"/><rect x="500" y="336" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.55"/><rect x="364" y="370" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.55"/><rect x="432" y="370" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.91"/><rect x="466" y="370" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.55"/><rect x="534" y="370" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.91"/><rect x="330" y="404" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.55"/><rect x="364" y="404" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.73"/><rect x="432" y="404" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.55"/><rect x="466" y="404" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.73"/><rect x="534" y="404" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.55"/><rect x="568" y="404" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.73"/><rect x="364" y="438" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.91"/><rect x="534" y="438" width="30" height="30" rx="4" fill="#e2985a" fill-opacity="0.73"/>
+  <text x="720" y="170" font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace" font-size="15" fill="#5c7396" letter-spacing="3">REDE NEAT</text>
+  <line x1="867" y1="495" x2="963" y2="405" stroke="#2e4266" stroke-width="1.5" opacity="0.8"/><line x1="867" y1="495" x2="963" y2="315" stroke="#2e4266" stroke-width="1.5" opacity="0.8"/><line x1="867" y1="405" x2="963" y2="405" stroke="#2e4266" stroke-width="1.5" opacity="0.8"/><line x1="867" y1="405" x2="963" y2="315" stroke="#2e4266" stroke-width="1.5" opacity="0.8"/><line x1="867" y1="315" x2="963" y2="405" stroke="#2e4266" stroke-width="1.5" opacity="0.8"/><line x1="867" y1="315" x2="963" y2="315" stroke="#2e4266" stroke-width="1.5" opacity="0.8"/><line x1="867" y1="225" x2="963" y2="405" stroke="#2e4266" stroke-width="1.5" opacity="0.8"/><line x1="867" y1="225" x2="963" y2="315" stroke="#2e4266" stroke-width="1.5" opacity="0.8"/><line x1="737" y1="450" x2="833" y2="495" stroke="#2e4266" stroke-width="1.5" opacity="0.8"/><line x1="737" y1="450" x2="833" y2="405" stroke="#2e4266" stroke-width="1.5" opacity="0.8"/><line x1="737" y1="450" x2="833" y2="315" stroke="#2e4266" stroke-width="1.5" opacity="0.8"/><line x1="737" y1="450" x2="833" y2="225" stroke="#2e4266" stroke-width="1.5" opacity="0.8"/><line x1="737" y1="360" x2="833" y2="495" stroke="#2e4266" stroke-width="1.5" opacity="0.8"/><line x1="737" y1="360" x2="833" y2="405" stroke="#2e4266" stroke-width="1.5" opacity="0.8"/><line x1="737" y1="360" x2="833" y2="315" stroke="#2e4266" stroke-width="1.5" opacity="0.8"/><line x1="737" y1="360" x2="833" y2="225" stroke="#2e4266" stroke-width="1.5" opacity="0.8"/><line x1="737" y1="270" x2="833" y2="495" stroke="#2e4266" stroke-width="1.5" opacity="0.8"/><line x1="737" y1="270" x2="833" y2="405" stroke="#2e4266" stroke-width="1.5" opacity="0.8"/><line x1="737" y1="270" x2="833" y2="315" stroke="#2e4266" stroke-width="1.5" opacity="0.8"/><line x1="737" y1="270" x2="833" y2="225" stroke="#2e4266" stroke-width="1.5" opacity="0.8"/><circle cx="720" cy="270" r="17" fill="#0f1826" stroke="#5b8bc9" stroke-width="2.5"/><circle cx="720" cy="360" r="17" fill="#0f1826" stroke="#5b8bc9" stroke-width="2.5"/><circle cx="720" cy="450" r="17" fill="#0f1826" stroke="#5b8bc9" stroke-width="2.5"/><circle cx="850" cy="225" r="17" fill="#0f1826" stroke="#5b8bc9" stroke-width="2.5"/><circle cx="850" cy="315" r="17" fill="#0f1826" stroke="#5b8bc9" stroke-width="2.5"/><circle cx="850" cy="405" r="17" fill="#0f1826" stroke="#5b8bc9" stroke-width="2.5"/><circle cx="850" cy="495" r="17" fill="#0f1826" stroke="#5b8bc9" stroke-width="2.5"/><circle cx="980" cy="315" r="17" fill="#0f1826" stroke="#f0b27e" stroke-width="2.5"/><circle cx="980" cy="405" r="17" fill="#0f1826" stroke="#f0b27e" stroke-width="2.5"/>
+  <g font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace">
+    <text x="64" y="601" font-size="30" font-weight="600" fill="#e8eef7" letter-spacing="2">IA_SuperMario</text>
+    <text x="64" y="631" font-size="15" fill="#5c7396" letter-spacing="3">FIG.11 · R&D TÉCNICO</text>
+  </g>
+  <g font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace" font-size="14" fill="#e2985a" opacity="0.85">
+    <text x="1136" y="631" text-anchor="end" letter-spacing="3">BOB.DEV</text>
+  </g>
+</svg>

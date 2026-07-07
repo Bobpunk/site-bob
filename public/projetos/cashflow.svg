@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Ilustração do projeto CashFlow">
+  
+  <defs>
+    <pattern id="gridS" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#5b8bc9" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+    <pattern id="gridL" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#5b8bc9" stroke-opacity="0.12" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="copperGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0b27e"/>
+      <stop offset="1" stop-color="#e2985a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="#0a101b"/>
+  <rect width="1200" height="675" fill="url(#gridS)"/>
+  <rect width="1200" height="675" fill="url(#gridL)"/>
+  <g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="27" y1="36" x2="45" y2="36"/>
+    <line x1="36" y1="27" x2="36" y2="45"/>
+  </g><g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="1155" y1="36" x2="1173" y2="36"/>
+    <line x1="1164" y1="27" x2="1164" y2="45"/>
+  </g><g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="27" y1="639" x2="45" y2="639"/>
+    <line x1="36" y1="630" x2="36" y2="648"/>
+  </g><g stroke="#e2985a" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="1155" y1="639" x2="1173" y2="639"/>
+    <line x1="1164" y1="630" x2="1164" y2="648"/>
+  </g>
+  
+  
+  <g>
+    <rect x="360" y="110" width="620" height="440" rx="14" fill="#0f1826" stroke="#2e4266"/>
+    <line x1="360" y1="154" x2="980" y2="154" stroke="#1d2b44"/>
+    <circle cx="386" cy="132" r="6" fill="#e2985a" opacity="0.9"/>
+    <circle cx="408" cy="132" r="6" fill="#5b8bc9" opacity="0.7"/>
+    <circle cx="430" cy="132" r="6" fill="#5c7396" opacity="0.6"/>
+    <text x="958" y="138" text-anchor="end" font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace" font-size="14" fill="#5c7396" letter-spacing="2">cashflow.app/dashboard</text>
+  </g>
+  <rect x="420" y="378" width="46" height="92" rx="8" fill="#5b8bc9" fill-opacity="0.45"/><rect x="496" y="320" width="46" height="150" rx="8" fill="#5b8bc9" fill-opacity="0.45"/><rect x="572" y="352" width="46" height="118" rx="8" fill="#5b8bc9" fill-opacity="0.45"/><rect x="648" y="274" width="46" height="196" rx="8" fill="#5b8bc9" fill-opacity="0.45"/><rect x="724" y="306" width="46" height="164" rx="8" fill="#5b8bc9" fill-opacity="0.45"/><rect x="800" y="232" width="46" height="238" rx="8" fill="url(#copperGrad)" fill-opacity="1"/><rect x="876" y="260" width="46" height="210" rx="8" fill="#5b8bc9" fill-opacity="0.45"/>
+  <polyline points="443,332 519,274 595,306 671,228 747,260 823,186 899,214" fill="none" stroke="#f0b27e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="443" cy="332" r="7" fill="#0a101b" stroke="#f0b27e" stroke-width="3"/><circle cx="519" cy="274" r="7" fill="#0a101b" stroke="#f0b27e" stroke-width="3"/><circle cx="595" cy="306" r="7" fill="#0a101b" stroke="#f0b27e" stroke-width="3"/><circle cx="671" cy="228" r="7" fill="#0a101b" stroke="#f0b27e" stroke-width="3"/><circle cx="747" cy="260" r="7" fill="#0a101b" stroke="#f0b27e" stroke-width="3"/><circle cx="823" cy="186" r="7" fill="#0a101b" stroke="#f0b27e" stroke-width="3"/><circle cx="899" cy="214" r="7" fill="#0a101b" stroke="#f0b27e" stroke-width="3"/>
+  <g transform="translate(180,240)">
+    <circle r="92" fill="#0f1826" stroke="#2e4266" stroke-width="2"/>
+    <text x="0" y="-12" text-anchor="middle" font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace" font-size="16" fill="#8ca2c0" letter-spacing="2">SALDO</text>
+    <text x="0" y="26" text-anchor="middle" font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace" font-size="30" font-weight="600" fill="#f0b27e">+32%</text>
+  </g>
+  <g font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace">
+    <text x="64" y="601" font-size="30" font-weight="600" fill="#e8eef7" letter-spacing="2">CashFlow</text>
+    <text x="64" y="631" font-size="15" fill="#5c7396" letter-spacing="3">FIG.06 · SOLUÇÃO CORPORATIVA</text>
+  </g>
+  <g font-family="'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace" font-size="14" fill="#e2985a" opacity="0.85">
+    <text x="1136" y="631" text-anchor="end" letter-spacing="3">BOB.DEV</text>
+  </g>
+</svg>
