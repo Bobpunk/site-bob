@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snake — Phaser 3 Prototype</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #0a101b;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: 'IBM Plex Mono', monospace;
+      padding: 20px;
+    }
+
+    .card {
+      max-width: 700px;
+      width: 100%;
+      border-radius: 16px;
+      border: 1px solid #1e293b;
+      background: #0f172a;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 20px;
+      border-bottom: 1px solid #1e293b;
+    }
+
+    .dot { width: 10px; height: 10px; border-radius: 50%; }
+    .dot-1 { background: #e2985a; }
+    .dot-2 { background: #5b8bc9; }
+    .dot-3 { background: #5c7396; }
+
+    .card-header span {
+      margin-left: auto;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      color: #5c7396;
+      text-transform: uppercase;
+    }
+
+    #game-container {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    #gameCanvas {
+      max-width: 100%;
+    }
+
+    #gameCanvas canvas {
+      max-width: 100% !important;
+      height: auto !important;
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 20px;
+      border-top: 1px solid #1e293b;
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      color: #5c7396;
+    }
+
+    .card-footer button {
+      background: #e2985a;
+      color: #0a101b;
+      border: none;
+      padding: 6px 16px;
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .card-footer button:hover {
+      background: #f0b27e;
+    }
+
+    .note {
+      margin-top: 16px;
+      padding: 16px;
+      background: #0f172a;
+      border: 1px solid #1e293b;
+      border-radius: 12px;
+      max-width: 700px;
+      width: 100%;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #94a3b8;
+    }
+
+    .note strong { color: #e2985a; }
+  </style>
+</head>
+<body>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:16px;width:100%;">
+    <div class="card">
+      <div class="card-header">
+        <div class="dot dot-1"></div>
+        <div class="dot dot-2"></div>
+        <div class="dot dot-3"></div>
+        <span>SNAKE.PY — PHASER 3</span>
+      </div>
+      <div id="gameContainer" style="display:flex;justify-content:center;padding:20px;">
+        <div id="gameCanvas"></div>
+      </div>
+      <div class="card-footer">
+        <span id="scoreLabel">SCORE: 000</span>
+        <button id="restartBtn">↻ REINICIAR</button>
+      </div>
+    </div>
+
+    <div class="note">
+      <strong>🐍 Snake clássico em Phaser 3</strong><br><br>
+      • Setas / WASD para mover · Espaço para reiniciar<br>
+      • A cada comida a cobra cresce + velocidade aumenta<br>
+      • Grade 20×20 · coração no centro do grid<br>
+      • Tema escuro com as cores do site (copper, blue, surface)<br><br>
+      Para implementar no projeto, basta extrair a cena Phaser
+      e o componente React de <code>snake-phaser.html</code>.
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.90.0/dist/phaser.min.js"></script>
+  <script>
+    (function() {
+      const GRID = 16;
+      const SCALE = 22;
+      const SIZE = GRID * SCALE;
+
+      const COLORS = {
+        bg: 0x0a101b,
+        grid: 0x1a2740,
+        gridCenter: 0x5b8bc9,
+        snakeHead: 0xe2985a,
+        snakeBody: 0xf0b27e,
+        food: 0x5b8bc9,
+        foodGlow: 0x8cb8e8,
+        death: 0xc94a4a,
+        text: 0xe8eef7,
+      };
+
+      class SnakeScene extends Phaser.Scene {
+        constructor() {
+          super({ key: 'SnakeScene' });
+          this.snake = [];
+          this.direction = { x: 1, y: 0 };
+          this.nextDirection = { x: 1, y: 0 };
+          this.food = { x: 0, y: 0 };
+          this.score = 0;
+          this.gameOver = false;
+          this.moveTimer = 0;
+          this.moveInterval = 150;
+          this.baseInterval = 150;
+          this.graphics = null;
+          this.scoreText = null;
+          this.gameOverTexts = [];
+        }
+
+        create() {
+          const g = this.add.graphics();
+          this.graphics = g;
+          this.scoreText = this.add.text(SIZE / 2, -100, '', {
+            fontFamily: "'IBM Plex Mono', monospace",
+            fontSize: '14px',
+            color: '#e2985a',
+            letterSpacing: 3,
+          }).setOrigin(0.5).setAlpha(0);
+
+          // Input
+          this.input.keyboard.on('keydown', (event) => {
+            const key = event.key;
+            if (['ArrowUp','w','W'].includes(key) && this.direction.y !== 1)
+              this.nextDirection = { x: 0, y: -1 };
+            if (['ArrowDown','s','S'].includes(key) && this.direction.y !== -1)
+              this.nextDirection = { x: 0, y: 1 };
+            if (['ArrowLeft','a','A'].includes(key) && this.direction.x !== 1)
+              this.nextDirection = { x: -1, y: 0 };
+            if (['ArrowRight','d','D'].includes(key) && this.direction.x !== -1)
+              this.nextDirection = { x: 1, y: 0 };
+          });
+
+          this.initGame();
+        }
+
+        initGame() {
+          this.snake = [
+            { x: 10, y: 10 },
+            { x: 9, y: 10 },
+            { x: 8, y: 10 },
+          ];
+          this.direction = { x: 1, y: 0 };
+          this.nextDirection = { x: 1, y: 0 };
+          this.score = 0;
+          this.gameOver = false;
+          this.moveTimer = 0;
+          this.moveInterval = this.baseInterval;
+          if (this.gameOverTexts) this.gameOverTexts.forEach(t => t.destroy());
+          this.gameOverTexts = [];
+          this.spawnFood();
+        }
+
+        spawnFood() {
+          let pos;
+          do {
+            pos = {
+              x: Phaser.Math.Between(1, GRID - 2),
+              y: Phaser.Math.Between(1, GRID - 2),
+            };
+          } while (this.snake.some(s => s.x === pos.x && s.y === pos.y));
+          this.food = pos;
+        }
+
+        update(time, delta) {
+          if (this.gameOver) return;
+
+          this.moveTimer += delta;
+          if (this.moveTimer < this.moveInterval) return;
+          this.moveTimer = 0;
+
+          this.direction = { ...this.nextDirection };
+
+          const head = this.snake[0];
+          const newHead = {
+            x: head.x + this.direction.x,
+            y: head.y + this.direction.y,
+          };
+
+          // Colisão com parede
+          if (newHead.x < 0 || newHead.x >= GRID || newHead.y < 0 || newHead.y >= GRID) {
+            this.endGame();
+            return;
+          }
+
+          // Colisão com o próprio corpo
+          if (this.snake.some(s => s.x === newHead.x && s.y === newHead.y)) {
+            this.endGame();
+            return;
+          }
+
+          this.snake.unshift(newHead);
+
+          if (newHead.x === this.food.x && newHead.y === this.food.y) {
+            this.score++;
+            this.moveInterval = Math.max(60, this.baseInterval - this.score * 4);
+            this.spawnFood();
+
+            // Feedback visual
+            this.scoreText.setAlpha(1);
+            this.scoreText.setText(`+${this.score}`);
+            this.tweens.add({
+              targets: this.scoreText,
+              alpha: 0,
+              y: -120,
+              duration: 500,
+              ease: 'Cubic.easeOut',
+              onComplete: () => {
+                this.scoreText.setY(-100);
+                this.scoreText.setAlpha(0);
+              }
+            });
+
+            const el = document.getElementById('scoreLabel');
+            if (el) el.textContent = `SCORE: ${String(this.score).padStart(3, '0')}`;
+          } else {
+            this.snake.pop();
+          }
+
+          this.draw();
+        }
+
+        endGame() {
+          this.gameOver = true;
+          this.draw();
+        }
+
+        draw() {
+          const g = this.graphics;
+          g.clear();
+
+          // Fundo
+          g.fillStyle(COLORS.bg, 1);
+          g.fillRect(0, 0, SIZE, SIZE);
+
+          // Grid
+          g.lineStyle(1, COLORS.grid, 0.3);
+          for (let x = 0; x <= GRID; x++) {
+            g.lineBetween(x * SCALE, 0, x * SCALE, SIZE);
+          }
+          for (let y = 0; y <= GRID; y++) {
+            g.lineBetween(0, y * SCALE, SIZE, y * SCALE);
+          }
+
+          // Centro do grid (destaque)
+          const cx = Math.floor(GRID / 2) * SCALE;
+          const cy = Math.floor(GRID / 2) * SCALE;
+          g.lineStyle(1.5, COLORS.gridCenter, 0.2);
+          g.lineBetween(cx - 4, cy, cx + 4, cy);
+          g.lineBetween(cx, cy - 4, cx, cy + 4);
+
+          // Comida (com brilho)
+          const fx = this.food.x * SCALE + SCALE / 2;
+          const fy = this.food.y * SCALE + SCALE / 2;
+          g.fillStyle(COLORS.foodGlow, 0.2);
+          g.fillCircle(fx, fy, SCALE * 0.6);
+          g.fillStyle(COLORS.food, 1);
+          g.fillCircle(fx, fy, SCALE * 0.35);
+
+          // Cobra
+          for (let i = 0; i < this.snake.length; i++) {
+            const seg = this.snake[i];
+            const sx = seg.x * SCALE + SCALE / 2;
+            const sy = seg.y * SCALE + SCALE / 2;
+            const radius = SCALE * 0.4 - (i === 0 ? 0 : 1);
+
+            if (this.gameOver && i === 0) {
+              g.fillStyle(COLORS.game, 0.8);
+            } else if (i === 0) {
+              g.fillStyle(COLORS.snake, 1);
+            } else {
+              g.fillStyle(COLORS.snakeBody, 0.9 - (i / this.snake.length) * 0.4);
+            }
+
+            g.fillCircle(sx, sy, radius);
+
+            // Olhos na cabeça
+            if (i === 0 && !this.gameOver) {
+              g.fillStyle(0xffffff, 1);
+              g.fillCircle(sx - 3, sy - 3, 2);
+              g.fillCircle(sx + 3, sy - 3, 2);
+              g.fillStyle(0x1a2333, 1);
+              g.fillCircle(sx - 2 + this.direction.x, sy - 3 + this.direction.y, 1);
+              g.fillCircle(sx + 4 + this.direction.x, sy - 3 + this.direction.y, 1);
+            }
+          }
+
+          // Remove game over texts antigos
+          if (this.gameOverTexts) {
+            this.gameOverTexts.forEach(t => t.destroy());
+          }
+          this.gameOverTexts = [];
+
+          // Game over
+          if (this.gameOver) {
+            const txt = this.add.text(SIZE / 2, SIZE / 2, 'GAME OVER', {
+              fontFamily: "'IBM Plex Mono', monospace",
+              fontSize: '28px',
+              color: '#e2985a',
+              letterSpacing: 6,
+            }).setOrigin(0.5).setAlpha(0);
+
+            this.gameOverTexts.push(txt);
+            this.tweens.add({
+              targets: txt,
+              alpha: 1,
+              duration: 300,
+              ease: 'Cubic.easeOut',
+            });
+          }
+        }
+      }
+
+      const config = {
+        type: Phaser.AUTO,
+        width: SIZE,
+        height: SIZE,
+        parent: 'gameCanvas',
+        backgroundColor: '#0a101b',
+        scene: [SnakeScene],
+        scale: {
+          mode: Phaser.Scale.FIT,
+          autoCenter: Phaser.Scale.CENTER_BOTH,
+          min: { width: 160, height: 160 },
+          max: { width: SIZE, height: SIZE },
+        },
+      };
+
+      const game = new Phaser.Game(config);
+
+      document.getElementById('restartBtn').addEventListener('click', () => {
+        const scene = game.scene.getScene('SnakeScene');
+        if (scene) {
+          scene.initGame();
+          scene.draw();
+          document.getElementById('scoreLabel').textContent = 'SCORE: 000';
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

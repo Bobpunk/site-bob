@@ -15,7 +15,7 @@ export const projetos: Projeto[] = [
     descricaoNegocio:
       "Otimização de Custos — redução de no-shows e agendamento inteligente com notificações automatizadas.",
     categoria: CategoriaProjeto.Corporativo,
-    stack: ["TypeScript", "Node.js", "NestJS", "PostgreSQL", "Redis"],
+    stack: ["PHP8+", "MARIADB", "TAILWIND.CSS"],
     imagemUrl: "/projetos/medbooking.svg",
     link: null,
   },
@@ -39,7 +39,7 @@ export const projetos: Projeto[] = [
     descricaoNegocio:
       "Segurança dos seus Dados — controle financeiro completo com criptografia e armazenamento local seguro.",
     categoria: CategoriaProjeto.Corporativo,
-    stack: ["TypeScript", "Node.js", "NestJS", "PostgreSQL", "Redis"],
+    stack: ["PHP8+", "PDO", "SESSIONS", "MARIADB","CSS PURO"],
     imagemUrl: "/projetos/cashflow.svg",
     link: null,
   },
@@ -51,7 +51,7 @@ export const projetos: Projeto[] = [
     descricaoNegocio:
       "Arquitetura Avançada — manipulação de dados em tempo real com cache distribuído e consistência eventual.",
     categoria: CategoriaProjeto.Tecnico,
-    stack: ["TypeScript", "Node.js", "NestJS", "PostgreSQL", "Redis", "Podman"],
+    stack: ["JS VANILLA", "TAILWIND.CSS"],
     imagemUrl: "/projetos/metadriver.svg",
     link: null,
   },
@@ -63,7 +63,7 @@ export const projetos: Projeto[] = [
     descricaoNegocio:
       "Processamento Assíncrono — arquitetura orientada a eventos para manipular grandes volumes de dados jurídicos com baixa latência.",
     categoria: CategoriaProjeto.Tecnico,
-    stack: ["TypeScript", "Node.js", "NestJS", "PostgreSQL", "Redis", "Podman"],
+    stack: ["TypeScript", "DrizzleORM", "NestJS", "PostgreSQL", "Redis", "Podman"],
     imagemUrl: "/projetos/trampro.svg",
     link: null,
   },
@@ -75,7 +75,7 @@ export const projetos: Projeto[] = [
     descricaoNegocio:
       "Tempo Real — pipeline de eventos com Redis Streams para tracking de entregas com latência inferior a 100ms.",
     categoria: CategoriaProjeto.Tecnico,
-    stack: ["TypeScript", "Node.js", "NestJS", "PostgreSQL", "Redis"],
+    stack: ["PHP8+","Laravel 11", "MariaDB","Samctum"],
     imagemUrl: "/projetos/logitrack.svg",
     link: null,
   },
@@ -87,7 +87,7 @@ export const projetos: Projeto[] = [
     descricaoNegocio:
       "Performance com Cache — Redis reduz consultas complexas de árvore de crafting de O(n²) para O(1) em chamadas subsequentes.",
     categoria: CategoriaProjeto.Tecnico,
-    stack: ["TypeScript", "React", "Node.js", "Redis"],
+    stack: ["Python3+","Flask","JS Vanilla", "CSS3+"],
     imagemUrl: "/projetos/dofus-receitas.svg",
     link: null,
   },
@@ -99,7 +99,7 @@ export const projetos: Projeto[] = [
     descricaoNegocio:
       "R&D — exploração de algoritmos evolutivos e redes neurais para tomada de decisão em ambientes complexos.",
     categoria: CategoriaProjeto.Tecnico,
-    stack: ["TypeScript", "Phaser"],
+    stack: ["Python3+","PYautogui","Keras","OpenCV"],
     imagemUrl: "/projetos/ia-supermario.svg",
     link: null,
   },

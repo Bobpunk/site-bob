@@ -1,0 +1,185 @@
+This file is a merged representation of a subset of the codebase, containing specifically included files and files not matching ignore patterns, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of a subset of the repository's contents that is considered the most important context.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Only files matching these patterns are included: package.json, src/**/*.ts, src/**/*.tsx, app/**/*.ts, app/**/*.tsx
+- Files matching these patterns are excluded: **/node_modules/**, **/dist/**, **/.next/**, **/build/**
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+app/
+  layout.tsx
+  page.tsx
+package.json
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="app/layout.tsx">
+import type { Metadata } from "next";
+import { Archivo, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
+import "./globals.css";
+
+const archivo = Archivo({
+  variable: "--font-archivo",
+  subsets: ["latin"],
+  axes: ["wdth"],
+});
+
+const plexSans = IBM_Plex_Sans({
+  variable: "--font-plex-sans",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const plexMono = IBM_Plex_Mono({
+  variable: "--font-plex-mono",
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+});
+
+export const metadata: Metadata = {
+  title: "Bob Dev | Full Stack Developer",
+  description:
+    "Software de alta performance, arquitetado para crescer. Desenvolvedor Full Stack com foco em arquitetura robusta e soluções escaláveis.",
+  keywords: [
+    "desenvolvedor full stack",
+    "next.js",
+    "node.js",
+    "nestjs",
+    "typescript",
+    "react native",
+    "postgresql",
+    "redis",
+    "software arquitetura",
+    "freelancer developer",
+  ],
+  authors: [{ name: "Bob Dev" }],
+  openGraph: {
+    title: "Bob Dev | Full Stack Developer",
+    description:
+      "Software de alta performance, arquitetado para crescer. Desenvolvedor Full Stack com foco em arquitetura robusta.",
+    type: "website",
+    locale: "pt_BR",
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html
+      lang="pt-BR"
+      className={`${archivo.variable} ${plexSans.variable} ${plexMono.variable} dark h-full scroll-smooth`}
+      style={{ colorScheme: "dark" }}
+    >
+      <body className="min-h-full flex flex-col bg-background text-foreground antialiased">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-copper focus:px-4 focus:py-3 focus:text-sm focus:font-semibold focus:text-copper-ink focus:shadow-lg focus:outline-none"
+        >
+          Pular para o conteúdo principal
+        </a>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
+    </html>
+  );
+}
+</file>
+
+<file path="app/page.tsx">
+import { Hero } from "@/components/Hero";
+import { Sobre } from "@/components/Sobre";
+import { TechStack } from "@/components/TechStack";
+import { Portfolio } from "@/components/Portfolio";
+import { Playground } from "@/components/Playground";
+import { Contato } from "@/components/Contato";
+
+export default function Home() {
+  return (
+    <main id="main-content" className="flex flex-col flex-1">
+      <Hero />
+      <Sobre />
+      <TechStack />
+      <Portfolio />
+      <Playground />
+      <Contato />
+    </main>
+  );
+}
+</file>
+
+<file path="package.json">
+{
+  "name": "landingpagebob",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "next": "16.2.10",
+    "nvm": "^0.0.4",
+    "phaser": "^3.90.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.10",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
+</file>
+
+</files>
